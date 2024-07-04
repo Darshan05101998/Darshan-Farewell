@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewell and Thank You!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .post-container {
+            width: 700px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #2ecc71;
+            flex: 0 0 150px;
+        }
+
+        .profile-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .profile-info h3 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .post-content {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.2em;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .post-content h1 {
+            color: #2ecc71;
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .fun-message {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.4em;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .post-footer {
+            padding-top: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bye-button {
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bye-button:hover {
+            background-color: #27ae60;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9em;
+            text-align: right;
+        }
+
+        .fireworks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            animation: explode 1.4s ease-out forwards, glow 1.4s ease-out forwards;
+        }
+
+        @keyframes explode {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px)) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fireworks" id="fireworks"></div>
+
+    <div class="post-container">
+        <div class="post-header">
+            <img class="profile-pic" src="image3.jpeg" alt="Profile Picture">
+            <div class="profile-info">
+                <h3>Darshan Dharmik</h3>
+                <div class="contact-info">
+                    <p>Phone: +91 8237465220</p>
+                    <p>Email: darshanvdharmik@gmail.com</p>
+                    <p>LinkedIn: https://www.linkedin.com/in/darshan-dharmik/</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-content">
+            <h1>Thank You & GoodBye !</h1>
+            <p>Hi All,</p>
+            <p> As most of you already know, today is my last working day in Amdocs.</p>
+            <p>As I prepare to leave Amdocs after almost four incredible years, I wanted to take a moment to express my deepest gratitude and share some parting thoughts.</p>
+            <p>Amdocs is my first company, it will hold a special place in my heart, and I feel fortunate to have been a part of this amazing CPQ Team and project Comcast. Working with all of you has been an amazing journey filled with countless memories, challenges, and achievements. I have learned so much and grown both personally and professionally during my time here. It's been a privilege to be part of such a talented and dedicated team.</p>
+            <p>I am grateful for the support and collaboration that have made my experience at Amdocs so enriching. Each of you has contributed to making this place not just a workplace, but an extended family. I will always cherish the friendships and connections I've made here.</p>
+            <p>As I move on to new opportunities, I carry with me the invaluable lessons and experiences gained at Amdocs. I am excited about the future but will always look back fondly on my time here. I will greatly miss working with each of you. I will never forget how much fun we  had working , during team events ,and Fridays won’t be the same without our Kabballah.</p>
+            <p>Many Thanks to all Leads & Managers : Shreyas , Tanveer , Dinesh , Pankaj , Pushpendra Sir , Pravin , Prem , Jehad , Ben for your endless support and guidance.</p>
+            <p>Special Thanks to my dear friends : Rohan , Tejas , Prashant , Ronak , Harshit ,Karthik , Yash , Prashant M, Parimal, Aditya, Anshul bhai, Snehal, Sheetal , Swati , Divya , Prachi , Pooja who were the ones that made each day in office filled with fun / laughter . </p>
+            <p>Thank you for everything, and I wish you all continued success and happiness in your endeavors. Let's stay in touch and keep the spirit of Amdocs alive in our hearts.</p>
+            <p class="fun-message">Warm regards,<br>Darshan Dharmik</p>
+        </div>
+        <div class="post-footer">
+            <button class="bye-button" onclick="closeWindow()">GoodBye!</button>
+            <div class="date">July 5, 2024</div>
+        </div>
+    </div>
+
+    <script>
+        function createFirework() {
+            const fireworksContainer = document.getElementById('fireworks');
+            const fireworkCount = 20;
+            const fragment = document.createDocumentFragment();
+            
+            for (let i = 0; i < fireworkCount; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.top = `${Math.random() * 100}%`;
+                firework.style.left = `${Math.random() * 100}%`;
+                firework.style.setProperty('--dx', (Math.random() - 0.5) * 200);
+                firework.style.setProperty('--dy', (Math.random() - 0.5) * 200);
+                firework.style.animationDelay = `${Math.random()}s`;
+                fragment.appendChild(firework);
+            }
+            
+            fireworksContainer.appendChild(fragment);
+        }
+
+        function loopFireworks() {
+            createFirework();
+            setTimeout(loopFireworks, 2000);
+        }
+
+        loopFireworks();
+
+        function closeWindow() {
+            window.open('', '_self', '');
+            window.close();
+        }
+    </script>
+</body>
+</html>
